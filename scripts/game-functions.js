@@ -154,6 +154,8 @@ function updateResultColor() {
   }
 }
 
+
+// Stores current game scores
 function storeConditionOfGame() {
   localStorage.setItem("score", JSON.stringify(score));
 }
