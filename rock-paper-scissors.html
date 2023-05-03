@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Website</title>
+		<link rel="stylesheet" href="styles/header.css">
+		<link rel="stylesheet" href="styles/main-content.css">
+		<link rel="stylesheet" href="styles/general.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="header">
+			<div class="left-container">
+				<p class="created-by-text">Created by Luke Jaekel</p>
+			</div>
+			<div class="middle-container">
+				<h1 class="title">ROCK, PAPER, SCISSORS GAME</h1>
+			</div>
+			<div class="right-container">
+				<p class="follow-me-text">Follow me on LinkedIn</p>
+				<img onclick="loadLinkedIn();" class="linked-in-icon" src="images/linked-in-icon.svg" />
+			</div>
+		</header>
+		<main>
+			<div class="main-container">
+				<div class="button-container">
+					<button onclick="game('rock');" class="rock-button">
+						<img class="rock-image" src="images/rock.svg" />
+					</button>
+					<button onclick="game('paper');" class="paper-button">
+						<img class="paper-image" src="images/paper.svg" />
+					</button>
+					<button onclick="game('scissors');" class="scissors-button">
+						<img class="scissors-image" src="images/scissors.svg" />
+					</button>
+				</div>
+			</div>
+			<div class="text-container">
+				<div class="choice-container">
+					<p class="js-user-choice-label">_</p>
+					<p class="js-computer-choice-label">_</p>
+				</div>
+			</div>
+			<div class="js-result-main-container">
+				<div class="result-container">
+					<div>
+						<p class="js-result">_</p>
+					</div>
+				</div>
+			</div>
+			<div class="score-main-container">
+				<div class="score-container">
+					<p class="js-wins">Wins: 0</p>
+					<p class="js-losses">Losses: 0</p>
+					<p class="js-ties">Ties: 0</p>
+					<button onclick="resetScoreCount(); resetGuesses();" class="reset-score-button">Reset Score</button>
+				</div>
+			</div>
+		</main>
+			<script src="scripts/game-functions.js"></script>
+			<script src="scripts/web-functions.js"></script>
+    </body>
+</html>

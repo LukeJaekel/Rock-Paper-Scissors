@@ -1,0 +1,166 @@
+p {
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.button-container {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.rock-button, .paper-button, .scissors-button {
+    height: 120px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 50%;
+    transition: opacity 0.2s, background-color 0.15s;
+    cursor: pointer;
+}
+
+.rock-button {
+    background-color: rgb(200, 202, 62);
+}
+
+.paper-button {
+    background-color: cadetblue;
+}
+
+.scissors-button {
+    background-color: rgb(74, 199, 43);
+}
+
+.rock-button:hover, 
+.paper-button:hover, 
+.scissors-button:hover {
+    opacity: 0.8;
+}
+
+.rock-button:active {
+    background-color: rgb(253, 255, 116);
+}
+
+.paper-button:active {
+    background-color: rgb(96, 199, 202);
+}
+
+.scissors-button:active {
+    background-color: rgb(119, 252, 86);
+}
+
+.rock-image {
+    width: 100px;
+}
+
+.paper-image {
+    width: 90px;
+    margin-right: 8px;
+}
+
+.scissors-image {
+    width: 100px;
+}
+
+.text-container, .score-main-container {
+    background-color: black;
+    display: flex;
+    flex: 1;
+    color: white;
+    font-family: Bebas Neue, Arial;
+    font-size: 48px;
+    letter-spacing: 2px;
+    justify-content: center;
+}
+
+.js-result-main-container {
+    background-color: gray;
+    display: flex;
+    flex: 1;
+    font-family: Bebas Neue, Arial;
+    font-size: 50px;
+    letter-spacing: 2px;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.score-container {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 22px 20px;
+}
+
+.reset-score-button {
+    background-color: rgb(117, 117, 117);
+    border-color: solid;
+    font-family: Bebas Neue, Arial;
+    font-size: 30px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s, background-color 0.1s, color 0.1s;
+}
+
+.reset-score-button:hover {
+    opacity: 0.8;
+}
+
+.reset-score-button:active {
+    background-color: rgb(78, 78, 78);
+    color: rgb(151, 151, 151);
+}
+
+.choice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.js-user-choice-label {
+    margin: 0;
+    color: yellow;
+}
+
+.js-computer-choice-label {
+    margin: 0;
+    color: rgb(19, 179, 59);
+}
+
+@media (max-width: 700px) {
+    .score-container {
+        font-size: 40px;
+    }
+
+    .reset-score-button {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 635px) {
+    .score-container {
+        font-size: 33px;
+    }
+
+    .reset-score-button {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 545px) {
+    .score-container {
+        font-size: 28px;
+    }
+
+    .reset-score-button {
+        font-size: 18px;
+    }
+}

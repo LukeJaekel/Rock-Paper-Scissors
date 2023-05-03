@@ -1,0 +1,76 @@
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 100px;
+}
+
+.left-container {
+    color: white;
+}
+
+.title {
+    font-family: Bebas Neue, Arial;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: white;
+    min-width: 230px;
+}
+
+.middle-container {
+    padding: 10px 10px;
+}
+
+.right-container {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    place-items: center;
+}
+
+.follow-me-text {
+    color: white;
+}
+
+.linked-in-icon {
+    width: 35px;
+    cursor: pointer;
+}
+
+.linked-in-icon:hover {
+    opacity: 0.8;
+}
+
+.linked-in-icon:active {
+    opacity: 0.6;
+}
+
+@media (max-width: 1000px) {
+    .title {
+        text-align: center;
+    }
+
+    .left-container {
+        text-align: center;
+    }
+
+    .right-container {
+        text-align: center;
+    }
+}
+
+@media (max-width: 875px) {
+    .linked-in-icon {
+    padding-top: 10px; 
+    }
+}
+
+@media (max-width: 510px) {
+    .header {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
